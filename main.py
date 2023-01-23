@@ -94,7 +94,7 @@ while cap.isOpened():
     if not success:
         break
 
-    # frame = cv2.resize(frame, WINDOW_SHAPE)
+    frame = cv2.resize(frame, WINDOW_SHAPE)
 
     frame, results = mp_pose_util.preprocess_img(frame)
     lms = mp_pose_util.get_landmarks(frame, results)
